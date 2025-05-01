@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: insta-reset-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: BOT_TOKEN
+        value: 7734188960:AAGObwsdTNUtocyHzxLLwjHYVDI1QtbY4xU
